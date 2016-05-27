@@ -12,8 +12,11 @@ var displayErrorMessage = function(username) {
   $('.output').text(username + "'s GitHub account was not found.");
 };
 
-var displayRepos = function(repoName) {
-  $('.repoInfo').append("<p>" + repoName + "</p>");
+var displayRepos = function(repoName, repoDescription, repoURL) {
+  $('.repoInfo').append("<div class='col-xs-4 repoBox'>" +
+                        "<a href='" + repoURL + "'><h2>" + repoName + "</h2></a>" +
+                        "<p>" + repoDescription + "</p>" +
+                        "<div>");
 };
 
 $(document).ready(function() {

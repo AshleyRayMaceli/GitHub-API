@@ -15,7 +15,7 @@ exports.GitHub.prototype.getBasicUserInfo = function(ghusername, displayGitHubIn
 exports.GitHub.prototype.getAllRepos = function(ghusername, displayRepos) {
   $.get('https://api.github.com/users/' + ghusername + '/repos').then(function(response) {
     for (var index = 0; index < response.length; index += 1) {
-      displayRepos(response[index].name);
+      displayRepos(response[index].name, response[index].description, response[index].html_url);
     }
   });
 };
