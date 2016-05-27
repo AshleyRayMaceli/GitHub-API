@@ -2,8 +2,8 @@ var GitHub = require('./../js/github.js').GitHub;
 var getBasicUserInfo = require('./../js/github.js').getBasicUserInfo;
 var getAllRepos = require('./../js/github.js').getAllRepos;
 
-var displayGitHubInfo = function(username, repos, repoURL) {
-  $('.output').text("Here is the info about " + username + "'s GitHub account");
+var displayGitHubInfo = function(username, repos, repoURL, profileURL) {
+  $('.output').html("Here is info about the GitHub account" + "<a href='" + profileURL + "'><h2>" + username + "</h2></a>");
   $('.allRepos').text("Number of public repositories: " + repos);
   $('.repoURL').text("View " + username + "'s repositories: " + repoURL);
 };

@@ -1,5 +1,16 @@
 body {
   text-align: center;
+  font-size: 14pt;
+}
+
+.output {
+  a {
+    color: purple;
+    text-decoration: none;
+  }
+  a :hover {
+    font-weight: bold;
+  }
 }
 
 .inputUserName {
