@@ -12,9 +12,10 @@ var displayErrorMessage = function(username) {
   $('.output').text(username + "'s GitHub account was not found.");
 };
 
-var displayRepos = function(repoName, repoDescription, repoURL) {
+var displayRepos = function(repoName, repoDescription, repoURL, dateCreated) {
   $('.repoInfo').append("<div class='col-xs-4 repoBox'>" +
                         "<a href='" + repoURL + "'><h2>" + repoName + "</h2></a>" +
+                        "<h3> Created: " + moment(dateCreated).format("MM/DD/YYYY") + "</h3>" +
                         "<p>" + repoDescription + "</p>" +
                         "<div>");
 };
