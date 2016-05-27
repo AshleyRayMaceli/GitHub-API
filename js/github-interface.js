@@ -13,7 +13,7 @@ var displayErrorMessage = function(username) {
 };
 
 var displayRepos = function(repoName) {
-  $('.repoInfo').text(repoName);
+  $('.repoInfo').append("<p>" + repoName + "</p>");
 };
 
 $(document).ready(function() {
