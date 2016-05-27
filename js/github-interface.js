@@ -1,8 +1,9 @@
 var GitHub = require('./../js/github.js').GitHub;
 var getRepos = require('./../js/github.js').getRepos;
 
-var displayGitHubInfo = function(username) {
+var displayGitHubInfo = function(username, repos) {
   $('.output').text("Here is the info about " + username + "'s GitHub account");
+  $('.allRepos').text("Number of public repositories: " + repos);
 };
 
 var displayErrorMessage = function(username) {
