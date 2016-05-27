@@ -2,17 +2,20 @@ var GitHub = require('./../js/github.js').GitHub;
 var getBasicUserInfo = require('./../js/github.js').getBasicUserInfo;
 var getAllRepos = require('./../js/github.js').getAllRepos;
 
-var displayGitHubInfo = function(username, repos, repoURL, profileURL, fullName, location) {
-  $('.output').html("Here is info about the GitHub account:" +
+var displayGitHubInfo = function(username, repos, repoURL, profileURL, fullName, location, company, image) {
+  $('.userInfo').html("Here is info about the GitHub account:" +
                     "<a href='" + profileURL + "'><h2>" + username + "</h2></a>" +
+                    "<br>" +
+                    "<img src='" + image + "'>" + "<br>" +
                     "Name: " + fullName + "<br>" +
-                    "Location: " + location).show();
+                    "Location: " + location + "<br>" +
+                    "Company: " + company).show();
   $('.allRepos').html("Number of public repositories: " + repos).show();
   $('.repoURL').html("View " + username + "'s repositories: " + repoURL).show();
 };
 
 var displayErrorMessage = function(username) {
-  $('.output').text(username + "'s GitHub account was not found.");
+  $('.userInfo').text(username + "'s GitHub account was not found.");
   $('.allRepos').hide();
   $('.repoURL').hide();
   $('.repoInfo').hide();

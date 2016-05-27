@@ -5,7 +5,7 @@ exports.GitHub = function() {
 
 exports.GitHub.prototype.getBasicUserInfo = function(ghusername, displayGitHubInfo, displayErrorMessage) {
   $.get('https://api.github.com/users/' + ghusername +'?access_token=' + apiKey).then(function(response) {
-    displayGitHubInfo(ghusername, response.public_repos, response.repos_url.full_name, response.html_url, response.name, response.location);
+    displayGitHubInfo(ghusername, response.public_repos, response.repos_url.full_name, response.html_url, response.name, response.location, response.company, response.avatar_url);
   }).fail(function(error){
     displayErrorMessage(ghusername);
     console.log(error.responseJSON.message);

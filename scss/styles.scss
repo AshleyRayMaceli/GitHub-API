@@ -3,7 +3,13 @@ body {
   font-size: 14pt;
 }
 
-.output {
+img {
+  height: 200px;
+  width: 200px;
+}
+
+.userInfo {
+  display: none;
   font-size: 14pt;
   font-weight: bold;
   margin-top: 20px;
@@ -31,6 +37,11 @@ body {
     font-size: 14pt;
     margin-bottom: 8px;
   }
+}
+
+.allRepos {
+  font-weight: bold;
+  display: none;
 }
 
 .repoBox {
