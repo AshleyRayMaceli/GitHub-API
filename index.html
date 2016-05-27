@@ -8,9 +8,12 @@
     <title>GitHub</title>
   </head>
   <body>
+    <h1>GitHub Repository Display!</h1>
+    <h2>Enter a GitHub username to see that user's repositories with descriptions</h2>
+    <h2>Click on the repository name to go to that repository!</h2>
     <form class="inputUserName">
-      <label for="username">Enter a GitHub username:</label>
-      <input id="username" type="text" required>
+      <label for="username" id="usernameLabel">Enter a GitHub username:</label><br>
+      <input id="usernameInput" type="text" required>
       <button class="btn btn-info" type="submit" id="findUsername">Submit</button>
     </form>
     <div class="output">

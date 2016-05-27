@@ -24,8 +24,8 @@ $(document).ready(function() {
 
   $('.inputUserName').submit(function(event) {
     event.preventDefault();
-    var userName = $('#username').val();
-    $('#username').val("");
+    var userName = $('#usernameInput').val();
+    $('#usernameInput').val("");
     newGitHubObject.getBasicUserInfo(userName, displayGitHubInfo, displayErrorMessage);
     newGitHubObject.getAllRepos(userName, displayRepos);
   });
