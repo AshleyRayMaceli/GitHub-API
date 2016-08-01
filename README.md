@@ -1,3 +1,7 @@
+![Homepage with Search Feature] (screenshot1.png)
+
+![Results] (screenshot2.png)
+
 # _GitHub User Lookup_
 
 #### _A web app that allows the user to search a GitHub username and get information for that GitHub user from the GitHub API._
@@ -6,7 +10,7 @@
 
 ## Description
 
-_A web app designed with JavaScript and the GitHub API that allows the user to search for information about a GitHub user based on their username. Displays the GitHub user's name, location, link to their GitHub profile and first 30 repositories with dates created, titles (with links to repository) and descriptions._
+_A web app designed with JavaScript and the GitHub API that allows the user to search for information about a GitHub user based on their username. Displays the GitHub user's name, location, link to their GitHub profile and first 30 repositories with dates created (Moment.js), titles (with links to repository) and descriptions._
 
 ## Setup/Installation Requirements
 
@@ -16,7 +20,7 @@ _A web app designed with JavaScript and the GitHub API that allows the user to s
 
 ## Known Bugs
 
-__
+_No Known Bugs at this time._
 
 ## Support and contact details
 
